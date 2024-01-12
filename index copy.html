@@ -16,9 +16,15 @@
         <p class="exampletwo">Tutoring for Everyone</p>
     </div>
     
-    <form action="/destination_page.html" method="POST">
-        <button type="submit" name="button1" value="Button 1">What We Do</button>
-        <button type="submit" name="button2" value="Button 2">Our Goal</button>
+    <form id="myForm">
+        <button type="button" name="button1" onclick="redirectTo('/Users/junichiro/Documents/MyPythonVS/EXCwebsite/what_we_do.html')">What We Do</button>
+        <button type="button" name="button2" onclick="redirectTo('/Users/junichiro/Documents/MyPythonVS/EXCwebsite/our_missions.html')">Our Goal</button>
     </form>
+
+    <script>
+        function redirectTo(destination) {
+            window.location.href = destination;
+        }
+    </script>
 </body>
 </html>
